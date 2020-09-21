@@ -10,12 +10,13 @@ console.clear();
 // result of a random number between one and ten
 // Both resolve and reject should only occur after 2 seconds
 
+
 let myFirstPromise = new Promise((resolve, reject) => {
   let check = true;
 
   if (check) {
     setTimeout(() => {
-      let rand = Math.floor(Math.random() * 10);
+      let rand = Math.floor(Math.random() * 10)+1;
       resolve(rand);
     }, 2000);
   } else {
